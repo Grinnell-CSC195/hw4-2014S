@@ -1,0 +1,23 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%BoundingBox: 0 0 300 300
+%%DocumentNeededResources: font Times-Roman
+%%EndComments
+
+/goldness 100 def % What percentage of goldness do you want your star to be?
+/red {1 goldness div}  def
+/green  {215 255 goldness div div} def
+/blue 0 def
+newpath
+/star {
+30 30 moveto
+150 270 lineto
+270 30 lineto
+30 200 lineto
+270 200 lineto
+30 30 lineto
+}
+closepath
+red green blue setrgbcolor
+stroke
+showpage
+%%EOF
