@@ -1,0 +1,29 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%BoundingBox: 0 0 300 300
+%%EndComments
+
+/base 30 def  %triangle base for each star point
+/height 150 def %triangle height for each star point
+/points 23 def %number of points
+
+/point
+{ 
+newpath
+0 0 moveto
+base 2  div neg 0 lineto
+0 height lineto
+base 2 div 0 lineto
+closepath fill
+} def
+
+/star
+{
+points { point 360 points div rotate } repeat
+} def
+
+150 150 translate
+
+star
+
+stroke
+showpage

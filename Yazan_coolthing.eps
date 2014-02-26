@@ -1,0 +1,45 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%BoundingBox: 0 0 576 792
+%%DocumentNeededResources: font Times-Roman
+%%EndComments
+%----Variables----
+/counter 0 def
+
+
+
+
+/IncreaseCounter
+{ /counter counter 10 add def } def
+
+
+
+
+
+%-----Triangle-----
+/tri
+{
+1 10 rlineto
+10 1 rlineto
+1 1 rlineto
+
+closepath }def
+
+%----Stuff-----
+
+100
+{
+newpath
+1 1 moveto tri
+0 setgray fill
+
+newpath
+counter counter moveto tri
+0 setgray fill
+
+IncreaseCounter
+} repeat
+
+
+
+showpage
+%%EOF

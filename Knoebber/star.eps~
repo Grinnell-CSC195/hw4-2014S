@@ -1,0 +1,14 @@
+%!PS-Adobe- basic star
+%%BoundingBox: 0 0 200 200
+%%DocumentNeededResources: font Times-Roman
+%%EndComments
+
+50 25 moveto
+100 25 lineto
+75 75 lineto
+stroke
+
+
+
+showpage
+%%EOF
